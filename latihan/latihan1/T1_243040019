@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Curiculum Vitage</title>
+</head>
+<body>
+    <h1 align="center">CURICULUM VITAE</h1>
+    <hr>
+    <img src="../latihan1/image/photo.jpg" width="120" align="right">
+    
+
+    <h4> Nama : Aldi adriansyah</h4>
+    <h4> Alamt : Banjaran</h4>
+    <h4> No telepon: 088223528136</h4>
+    <h4>Email: aldi@gmail.com</h4>
+
+    
+    <h4>DESKRIPSI</h4>
+    <h4>Saya adalah seorang mahasiswa universitas pasundan</h4>
+    <h4>fakultas teknik prodi informatika</h4>
+
+    <h4>PENDIDIKAN</h4>
+    <h4>SD: SD SIRNAGALIH</h4>
+    <h4>SMP: SMP PASUNDAN 1 BANJARAN </h4>
+    <h4>SMK: SMK  PASUNDAN 2 BANJARAN</h4>
+
+    <h4>SEMINAR/WORSKSOP</h4>
+    <h4>1.SEMINAR</h4>
+    <h4>2.SEMINAR</h4>
+    <h4>3.WORKSOP</h4>
+
+    <h4>PELATIHAN</h4>
+    <h4>1.PELATIHAN</h4>
+
+    <h4>BAHASA PEMOGRAMAN</h4>
+    <h4>- C/C++</h4>
+    <h4>-JAVA</h4>
+
+    
+
+
+   
+
+
+
+</body>
+</html>
+
+
+
+
+
+        
