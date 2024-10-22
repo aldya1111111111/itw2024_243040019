@@ -1,0 +1,27 @@
+body {background-color: aqua;
+
+}
+
+h1 {
+    font-family: "comic sans ms";
+    font-size: 60px;
+    color: darkblue;
+}
+h3 a{
+    color: aliceblue;
+}
+h3 a:hover{
+    color: blueviolet
+}
+h4  {
+    text-align: right;
+    font-style: italic;
+
+}
+.p1 {
+    color: orange;
+}
+
+p {
+    text-align: justify;
+}
