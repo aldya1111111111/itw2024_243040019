@@ -1,0 +1,76 @@
+body  {
+    font: 16px/28px arial, sans-serif;
+    background-image: url(image/bg.jpg);
+    color: rgb(10, 3, 67);
+}
+.container {
+    width: 800px;
+    margin: auto;
+    margin-top: -10px;
+    background-color: white;
+}
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.header p{
+    margin-top: 10px;
+}
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+.header ul li {
+    display: inline-block;
+    margin-left: -40px;
+    margin-right: 40px;
+}
+.header a {
+    text-decoration: none;
+    color: rgb(255, 10, 194);
+    padding: 3px;
+}
+.header a:hover { 
+    background-color: rgb(199, 125, 172);
+    color: red (225, 38, 169);
+}
+.hero {
+    height: 280px;
+    background-image: url(image/bg2.jpg);
+    background-position: 79px;
+    border-bottom: 5px solid rgb(8, 55, 85);
+    border-top: 5px solid rgb(8, 55, 85);
+
+}
+.content {
+    padding: 20px;
+}
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;
+
+}
+.content .penulis {
+    font-size: 11px;
+    margin-top: -5px;
+}
+.content .penulis a{
+    color: rgb(19, 19, 19);
+    text-decoration: none;
+}
+.content .penulis a:hover{
+    background-color: rgba(4, 10, 14, 0.616);
+}
+.content p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.footer {
+    background-color: #333;
+    padding: 10px;
+}
+.footer .copy {
+    color: #ffffff; 
+    text-align: center;
+    font-size: 12px;
+}
