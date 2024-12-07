@@ -1,0 +1,255 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #ddd;
+    font-size: 18px;
+    margin: 50px;
+}
+
+/* container */
+
+.container {
+    display: grid;
+    gap: 10px;
+}
+
+/* header */
+
+.header {
+    display: grid;
+    grid-template-areas:
+    'hero hero feature-1'
+    'hero hero feature-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(sepatu\ rs.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.hero h2, .hero p {
+    display: none;
+}
+
+.features {
+    background-color:black;
+    color: white;
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+    place-content: center ;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(yonex\ design.jpg);
+    background-size: cover;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(lining\ design.jpg);
+    background-size: cover;
+}
+
+.features .price {
+    font-size: 3em;
+    font-weight: 200;
+    color: red;
+}
+
+.features .item {
+    color: black;
+}
+
+/* navigasi */
+.menu {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    ;
+    
+
+}
+
+.menu .brand {
+    font-size: 1.2em;
+    color: black;
+
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    color: black;
+    gap: 5px;
+
+}
+
+.menu a{
+    display: block;
+    background-color: black;
+    color: aqua;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 5px;
+    
+}
+/* Hamburger menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+/* Hamburger Menu Animation */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+
+}
+   
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px)
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0)
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+
+/* Gallery */
+.gallery {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 28px;
+    gap: 10px;
+}
+
+/* selection */
+
+ 
+/* responsive breakpoint */
+
+@media (max-width: 1200px) {
+    .menu {
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+    .menu .brand {
+        display: none;
+    }
+    .hero > * {
+        display: block;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hero {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    .menu {
+        order: -1;
+        justify-items: end;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+
+    .menu ul {
+        display: flex;
+       position: absolute;
+       right: 0;
+       top: 0;
+       width: 100%;
+       height: 100vh;
+       justify-content: space-evenly;
+       flex-direction: column;
+       align-items: center;
+       align-content: space-evenly;
+       background-color: black;
+       z-index: 1;
+       transform: translatey(-100%)
+       transition: all 1s;
+       opacity: 0;
+    }  
+
+    .menu ul.slide {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+@media (max-width: 600px){
+    .header{
+        grid-template-areas: 
+        'hero'
+        'feature-1'
+        'feature-2';
+    }
+}
